@@ -1,27 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="formulario.css" midea="">
+    <link rel="stylesheet" type="text/css" href="formulario.css">
+    <link rel="shortcut icon" href="logowl.png" type="image/x-icon">
     <title>Cadastro Cliente</title>
-    <script type="text/javascript" src="./index.js" defer=""></script>
     <link rel="stylesheet" href="./index.css">
   </head>
 
   <body>
     <figure>
-      <img src="data:image/png;base64,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" alt="Logo WL">
+      <img src="logowl.png" alt="Logo WL">
     </figure>
 
     <div>
       <h1 id="titulo">Cadastro de Cliente</h1>
-      <p id="subtitulo">Preencha os formulários para enviar a proposta do cliente. Todos os campos com asterisco (*) são de preenchimento obrigatório.</p>
-      <br>
+      <p id="subtitulo">Preencha os formulários para enviar a proposta do cliente. <br>Todos os campos com asterisco (*) são de preenchimento obrigatório.</p>
     </div>
     <form>
       <fieldset class="grupo">
+        <legend>Dados do imóvel</legend>
 
         <div class="campo">
 
@@ -56,6 +56,7 @@
 
 
       <fieldset class="grupo">
+        <legend>Dados Pessoais</legend>
 
         <div class="campo">
           <label for="nome">Nome Completo*</label>
@@ -85,7 +86,7 @@
             <input type="radio" name="devweb" value="extrato">Extrato Bancário
           </label><br>
           <label>
-            <input type="radio" name="devweb" value="outros">Outros. Especifique:
+            <input type="radio" name="devweb" value="outros">Outros - Especifique:
             <input type="text">
           </label>
         </div>
@@ -93,6 +94,8 @@
       </fieldset>
 
       <fieldset>
+        <legend>Informações de Contato</legend>
+
         <div class="campo">
           <label for="email">Email*</label>
           <input type="email" name="email" id="email" required="">
@@ -103,7 +106,8 @@
 
       </fieldset>
 
-      <fielset class="grupo">
+      <fieldset class="grupo">
+        <legend>Simulação</legend>
         <div id="check">
           <label><strong>Selecione os bancos que você deseja simulação:</strong></label><br>
           <input type="checkbox" id="banco1" name="banco1" value="caixa">
@@ -114,13 +118,11 @@
           <label for="banco3">Santander</label>
           <input type="checkbox" id="banco4" name="banco4" value="Bradesco">
           <label for="banco4">Bradesco</label>
-        </div><br><br>
-      </fielset>
+        </div>
+      </fieldset>
 
       <button class="botao" type="submit">Concluir</button>
+      
     </form>
-
-
   </body>
-
 </html>
